@@ -18,7 +18,7 @@ object CookBook extends App {
 
     var funSeq = mySeq.slice(1064, 2960).filter(t => (t == t.toUpperCase()) || (t(0) == ' ')).filterNot(t => t.contains('*') || t.contains('"')).zipWithIndex
 
-// does not work
+// does not work. Wanted to compare next line with the previous one - to have title followed by lines with whitespace in the beginning
 //    for {
 //      (text, i) <- funSeq
 //      if (funSeq(i)._1 == funSeq(i)._1.toUpperCase()) && (funSeq(i + 1)._1 == funSeq(i + 1)._1.toUpperCase())
